@@ -1,0 +1,26 @@
+{
+  "name": "backend-invitation-web-tiara-jalu",
+  "version": "1.0.0",
+  "description": "Backend RSVP website undangan digital Tiara & Jalu",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js",
+    "start:dev": "nodemon src/main.js"
+  },
+  "author": "Amin",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/uuid": "^10.0.0"
+  }
+}
