@@ -8,8 +8,8 @@ const PORT = process.env.APP_PORT || 5000;;
 
 app.use(express.json());
 
-app.post('/', userController.addRsvp);
-app.get('/', userController.getRsvp);
+app.post('/api/rsvp', userController.addRsvp);
+app.get('/api/rsvp', userController.getRsvp);
 
 app.use(errorMiddleware);
 
