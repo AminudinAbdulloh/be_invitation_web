@@ -5,7 +5,7 @@ export const rsvpValidation = Joi.object({
     nama: Joi.string().max(225).required(),
     kehadiran: Joi.string().max(225).required(),
     jumlahTamu: Joi.number().max(5).required(),
-    ucapan: Joi.string().optional(),
+    ucapan: Joi.string().allow('').empty('').default(null),
 });
 
 export const validate = (schema, request) => {

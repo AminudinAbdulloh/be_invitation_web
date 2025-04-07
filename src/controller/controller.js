@@ -11,6 +11,17 @@ const addRsvp = async (req, res, next) => {
     }
 }
 
+const getUcapan = async (req, res, next) => {
+    try {
+        const result = await service.getUcapan();
+        res.status(200).json({
+            data: result
+        });
+    } catch (e) {
+        next(e);
+    }
+}
+
 const getRsvp = async (req, res, next) => {
     try {
         const result = await service.getRsvp();
@@ -22,4 +33,4 @@ const getRsvp = async (req, res, next) => {
     }
 }
 
-export default { addRsvp, getRsvp };
+export default { addRsvp, getUcapan, getRsvp };
