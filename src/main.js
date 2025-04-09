@@ -17,7 +17,7 @@ app.use(express.json());
 
 app.post('/api/rsvp', controller.addRsvp);
 app.get('/api/ucapan', controller.getUcapan);
-app.get('/api/rsvp', controller.getUcapan);
+app.get('/api/rsvp', controller.getRsvp);
 
 app.use(errorMiddleware);
 
